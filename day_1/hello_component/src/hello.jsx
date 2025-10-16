@@ -5,5 +5,7 @@ function MainContent() {
             <p>Abeokuta, Nigeria</p>
             <p>Welcome to NCC, train, explore and  emerge!</p>
         </main>
-    )
+    );
 }
+
+export default MainContent;
