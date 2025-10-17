@@ -1,7 +1,7 @@
 function Header () {
     return (
         <header>
-            <title>My React App</title>
+            <h2>My React App</h2>
             <nav>
                 <a href="http://">Home</a>
                 <a href="http://">About us</a>

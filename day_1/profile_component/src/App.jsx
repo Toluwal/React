@@ -1,9 +1,10 @@
-import './profile.jsx'
+import MainContent from './profile';
+// import pr
 
 function App() {
  return (
       <div>
-       MainContent      
+       <MainContent/>      
        </div>
   );
 }

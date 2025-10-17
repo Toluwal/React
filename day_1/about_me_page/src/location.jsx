@@ -1,6 +1,6 @@
 function Location() {
     return(
-        <section>
+        <section className="location">
             <h3>City</h3>
             <p>Abeokuta</p>
             <h3>What makes your tech community special</h3>

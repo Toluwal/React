@@ -2,7 +2,7 @@ function Header() {
     return(
         <header>
             <h2>Itunu Bisayo ABODERIN</h2>
-            <p>"Aspiring AI Developer from Abeokuta"</p>
+            <p className="asp">"Aspiring AI Developer from Abeokuta"</p>
         </header>
     );  
 }
