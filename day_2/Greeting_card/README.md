@@ -10,3 +10,5 @@
 5. In `App.jsx`, create 3 different greeting cards with different colors
 
 **Sample Output:**![alt text](<Screenshot 2025-10-23 141230.png>)
+
+**Issue**: https://github.com/Toluwal/React/issues/2
