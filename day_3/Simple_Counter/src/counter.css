@@ -1,0 +1,36 @@
+.counter{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #008751;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.counter p {
+    text-align: center;
+    color: #008751;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.increment:hover {
+    background-color: #008751;
+}
+
+.decrement:hover{
+    background-color: red;
+}
+
+.reset:hover{
+    background-color: beige;
+}
