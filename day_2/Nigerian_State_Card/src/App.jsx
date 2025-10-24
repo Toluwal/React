@@ -10,25 +10,25 @@ function App() {
         <StateCard
         state="Ogun State"
         capital = "Abeokuta"
-        region = "SouthWest"
+        region = "West"
         population = "5,945,275"
         />
         <StateCard
         state="Imo"
         capital = "Owerri"
-        region = "South East"
+        region = "East"
         population = "5,167,722"
         />
         <StateCard
         state="Bayelsa"
         capital = "Yenagoa"
-        region = "South South"
+        region = "South"
         population = "2,394,725"
         />
         <StateCard
         state="Kaduna"
         capital = "Kaduna"
-        region = "North West"
+        region = "North"
         population = "8,324,285"
         />
       </div>

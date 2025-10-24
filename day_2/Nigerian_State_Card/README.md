@@ -1,14 +1,19 @@
-## 🎯 Task 2: Product Card
+## 🎯 Task 3: Nigerian State Card
 
-**Task:** Build a product card for a Nigerian e-commerce site
+**Task:** Create cards showing Nigerian states and their capitals
 
 **Requirements:**
-1. Create `ProductCard.jsx`
-2. Accept props: `name`, `price`, `image`, `inStock`
-3. Display product image, name, and price
-4. Show "In Stock" or "Out of Stock" based on `inStock` prop
-5. Style "In Stock" as green and "Out of Stock" as red
-6. Create a CSS file for styling
-7. In `App.jsx`, display 3 different products
+1. Create `StateCard.jsx`
+2. Accept props: `state`, `capital`, `region`, `population`
+3. Display all information in a styled card
+4. Use different background colors for different regions:
+   - North: `#8B4513`
+   - South: `#008751`
+   - East: `#FFD700`
+   - West: `#4169E1`
+5. Create 4 state cards in `App.jsx`
 
 **Sample Output:**
+![alt text](<Screenshot 2025-10-24 110529.png>)
+
+**Issue**: https://github.com/Toluwal/React/issues/2

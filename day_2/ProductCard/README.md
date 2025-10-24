@@ -1,16 +1,17 @@
-# React + Vite
+## 🎯 Task 2: Product Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Task:** Build a product card for a Nigerian e-commerce site
 
-Currently, two official plugins are available:
+**Requirements:**
+1. Create `ProductCard.jsx`
+2. Accept props: `name`, `price`, `image`, `inStock`
+3. Display product image, name, and price
+4. Show "In Stock" or "Out of Stock" based on `inStock` prop
+5. Style "In Stock" as green and "Out of Stock" as red
+6. Create a CSS file for styling
+7. In `App.jsx`, display 3 different products
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Sample Output:**
+![alt text](<Screenshot 2025-10-24 112022.png>)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Issue**: https://github.com/Toluwal/React/issues/2

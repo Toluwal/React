@@ -1,9 +1,10 @@
-function ProfileHeader(name, title, avatar) {
+function ProfileHeader({name, title, avatar}) {
     return (
-        <div>
+        <div className="profile-header">
+        <img src={avatar} alt= {`${name}'s avatar `} className="profile-avatar"/>
         <h2>{name}</h2>
         <p>{title}</p>
-        <img src={avatar} alt= {`${name} avatar `} className="profile-avatar"/>
+       
         </div>
     );
 }
