@@ -16,4 +16,4 @@
 
 **Sample Output:**
 
-
+![alt text](<Screenshot 2025-10-24 134452.png>)

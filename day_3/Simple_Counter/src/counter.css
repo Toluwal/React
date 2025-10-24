@@ -1,26 +1,32 @@
 .counter{
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
-    padding: 30px;
-    border: 2px solid #008751;
+    padding: 50px;
+    border: 2px solid #666867;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #bbb5b5;
 }
 
 .counter p {
     text-align: center;
-    color: #008751;
+    color: #1c2220;
 }
-
+.btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 button{
     width: 100%;
     padding: 12px;
-    background-color: #d32f2f;
+    background-color: #615d5d;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    
+    justify-content: sp;
 }
 
 .increment:hover {
@@ -32,5 +38,5 @@ button{
 }
 
 .reset:hover{
-    background-color: beige;
+    background-color: rgb(85, 85, 75);
 }
