@@ -1,14 +1,14 @@
 import { useState } from "react";
 function NameTag() {
-const {name, setName}  = useState('');
-const {title, setTitle} = useState('');
-const {company, setCompany} = useState('');
+const [name, setName]  = useState('');
+const [title, setTitle] = useState('');
+const [company, setCompany] = useState('');
 
-function download() {
-    setName()
-    setTitle()
-    setCompany()
-}
+// function download() {
+//     setName()
+//     setTitle()
+//     setCompany()
+// }
 
 return (
     <div>
@@ -29,9 +29,9 @@ return (
         />
         <h1>--- NAME TAG ---</h1>
         <p>Hello, my name is {name}</p>
-        <p>{title}</p>
-        <p>{company}</p>
-        <button onClick={download} className="download-btn">download</button>
+        <p>Title: {title}</p>
+        <p>Company: {company}</p>
+        {/* <button onClick={download} className="download-btn">download</button> */}
     </div>
 );
 
