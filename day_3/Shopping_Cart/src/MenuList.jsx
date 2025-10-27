@@ -18,3 +18,5 @@ function ProductList({onAddProduct}) {
         </div>
     );
 }
+
+export default ProductList;
