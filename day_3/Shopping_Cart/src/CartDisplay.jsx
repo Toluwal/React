@@ -23,3 +23,5 @@ function CartDisplay({products, onRemoveProduct}) {
         </div>
     );
 }
+
+export default CartDisplay;

@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <header className="tracker-header">
-      <h1>💳 Expense Tracker</h1>
+      <h1> Personal Expense Tracker</h1>
       <p>{today}</p>
     </header>
   );
