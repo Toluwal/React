@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--bg);
+  background: black;
   color: var(--dark);
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .tracker-header p {
-  color: var(--muted);
+  color: white;
   font-size: 14px;
 }
 
@@ -215,11 +215,11 @@ body {
   font-size: 13px;
 }
 
-.category-Food { background: #ff7043; }
-.category-Transport { background: #42a5f5; }
-.category-Bills { background: #8d6e63; }
-.category-Entertainment { background: #7e57c2; }
-.category-Others { background: #26a69a; }
+.category-Food { background: #9ade7b; }
+.category-Transport { background: #dee791; }
+.category-Bills { background: #fff98b; }
+.category-Entertainment { background: #e9e3f5; }
+.category-Others { background: #ffd6ba; }
 
 .expense-main {
   display: flex;

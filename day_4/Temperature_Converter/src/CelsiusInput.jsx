@@ -1,11 +1,20 @@
+function CelsiusInput({ value, onTemperatureChange }) {
+  const handleChange = (e) => {
+    onTemperatureChange(Number(e.target.value));
+  };
 
-
-function CelsiusInput({celsius, onTypeCelsius}) {
-return (
-    <div className="celsius-input">
-        <label>Celsius</label>
-        <input type="number" />
-
+  return (
+    <div>
+      <label>
+        Celsius:
+        <input
+          type="number"
+          value={value}
+          onChange={handleChange}
+        />
+      </label>
     </div>
-)
+  );
 }
+
+export default CelsiusInput;

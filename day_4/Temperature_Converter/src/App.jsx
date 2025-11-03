@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import CelsiusInput from "./CelsiusInput";
+import FahrenheitInput from "./FarenheitInput";
 
-function App() {
-  const [count, setCount] = useState(0)
+function TemperatureApp() {
+  const [temperature, setTemperature] = useState({
+    scale: "c",
+    value: ""
+  });
+
+  const handleCelsiusChange = (value) => {
+    setTemperature({ scale: "c", value });
+  };
+
+  const handleFahrenheitChange = (value) => {
+    setTemperature({ scale: "f", value });
+  };
+
+  const toFahrenheit = (celsius) => (celsius * 9) / 5 + 32;
+  const toCelsius = (fahrenheit) => ((fahrenheit - 32) * 5) / 9;
+
+  const celsius =
+    temperature.scale === "f"
+      ? toCelsius(temperature.value)
+      : temperature.value;
+
+  const fahrenheit =
+    temperature.scale === "c"
+      ? toFahrenheit(temperature.value)
+      : temperature.value;
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>Temperature Converter</h1>
+      <CelsiusInput value={celsius} onTemperatureChange={handleCelsiusChange} />
+      <FahrenheitInput
+        value={fahrenheit}
+        onTemperatureChange={handleFahrenheitChange}
+      />
+    </div>
+  );
 }
 
-export default App
+export default TemperatureApp;

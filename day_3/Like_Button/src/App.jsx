@@ -1,16 +1,14 @@
 
 import './App.css'
 
+import LikeButton from "./LikeButton";
+
 function App() {
-
   return (
-
-      <div>
-        <LikeButton/>
-
-      </div>
-      
+    <div style={{ padding: "20px" }}>
+      <LikeButton />
+    </div>
   );
 }
 
-export default App
+export default App;

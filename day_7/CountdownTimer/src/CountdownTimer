@@ -1,0 +1,35 @@
+import { useState, useEffect } from "react";
+
+function CountdownTimer() {
+  const targetDate = new Date("October 1, 2025 00:00:00").getTime();
+  const [timeLeft, setTimeLeft] = useState(targetDate - Date.now());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft(targetDate - Date.now());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [targetDate]);
+
+  if (timeLeft <= 0) {
+    return <h2>Event Started!</h2>;
+  }
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+  const seconds = Math.floor((timeLeft / 1000) % 60);
+
+  return (
+    <div>
+      <h2> Countdown to Independence Day</h2>
+      <h1>
+        {days} Days : {hours} Hours : {minutes} Minutes : {seconds} Seconds
+      </h1>
+      <p>October 1, 2025</p>
+    </div>
+  );
+}
+
+export default CountdownTimer;
