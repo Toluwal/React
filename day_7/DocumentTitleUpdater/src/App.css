@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f9ff, #e8eefc);
+}
+
+.title-updater-container {
+  background: #ffffff;
+  width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title-updater-container h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #37474f;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dce5f2;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input[type="text"]:focus {
+  border-color: #4a90e2;
 }
 
-.card {
-  padding: 2em;
+.preview {
+  font-size: 0.9rem;
+  color: #6d7a88;
+  margin-bottom: 20px;
+  background: #f9fbfd;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px dashed #c9d2e1;
 }
 
-.read-the-docs {
-  color: #888;
+button {
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #3473b8;
 }

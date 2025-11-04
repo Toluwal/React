@@ -27,7 +27,7 @@ function ContactForm() {
 
   return (
     <div>
-      <h2>📧 Contact Us</h2>
+      <h2>Contact Us</h2>
       {submitted ? (
         <p>Message Sent!</p>
       ) : (

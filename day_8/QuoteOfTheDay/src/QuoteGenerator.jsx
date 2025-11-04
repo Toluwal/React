@@ -7,7 +7,7 @@ function QuoteGenerator() {
 
   const fetchQuote = () => {
     setLoading(true);
-    fetch("https://zenquotes.io/api/random")
+    fetch("https://johnspence.com/90-quotes-change/")
       .then((res) => res.json())
       .then((data) => {
         setQuote(data[0]);

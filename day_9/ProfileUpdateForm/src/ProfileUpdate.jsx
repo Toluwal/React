@@ -27,7 +27,7 @@ function ProfileUpdate() {
 
   return (
     <div>
-      <h2>👤 Update Profile</h2>
+      <h2>Update Profile</h2>
       {submitted ? (
         <p>Profile Updated!</p>
       ) : (
@@ -45,7 +45,7 @@ function ProfileUpdate() {
           </select>
           <div>
             <label>
-              <input type="radio" name="gender" value="Male" onChange={handleChange} />
+              <input className="input-radio" type="radio" name="gender" value="Male" onChange={handleChange} />
               Male
             </label>
             <label>
