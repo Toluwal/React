@@ -61,6 +61,12 @@ export const AboutSection = () => {
                 <div className="p-3 rounde-full bg-primary/10">
                 <User className="h-6 w-6 text-primary"/>
                 </div>
+                <div className="text-left">
+                  <h4 font-semibold text-lg>Backend Development</h4>
+                  <p className="text-muted-foreground">I build and maintain server-side applications that power modern web and mobile systems. 
+                    My focus is on creating secure APIs, managing databases, and ensuring efficient, scalable backend performance.</p>
+
+                </div>
                 
               </div>
             </div>
@@ -68,6 +74,12 @@ export const AboutSection = () => {
               <div className="flex items-start gap-4">
                 <div className="p-3 rounde-full bg-primary/10">
                 <Briefcase className="h-6 w-6 text-primary"/>
+                </div>
+                <div className="text-left">
+                  <h4 font-semibold text-lg>Data Analysis</h4>
+                  <p className="text-muted-foreground">I analyze and interpret data to uncover meaningful insights that support better decision-making. 
+                    My work includes cleaning, modeling, and visualizing data using tools like Excel, Power BI, SQL, and Python.</p>
+
                 </div>
               </div>
             </div>
